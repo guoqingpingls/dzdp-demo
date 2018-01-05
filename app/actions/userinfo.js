@@ -6,3 +6,9 @@ export function login(data) {
         data
     }
 }
+export function update (data) {
+    return {
+        type: actionTypes.UPDATE,
+        data
+    }
+}
