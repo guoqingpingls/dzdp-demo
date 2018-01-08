@@ -25,6 +25,7 @@ class App extends React.Component {
             cityName: cityName
         })
         console.log('cityName: ', cityName)
+        console.log('userinfo: ', this.props.userinfo)
         // 将城市信息存储到redux里面
         setTimeout(() => {
             this.setState({
@@ -37,7 +38,7 @@ class App extends React.Component {
             <div>
                 {
                     this.state.isShowLoading
-                        ? <div>加载中。。。。</div>
+                        ? <div>加11111载中。。。。</div>
                         : this.props.children
                 }
             </div>
@@ -49,7 +50,7 @@ class App extends React.Component {
 // export default App
 function mapStateToProps (state) {
     return {
-
+        userinfo: state.userinfo
     }
 }
 function mapDispatchToProps (dispatch) {

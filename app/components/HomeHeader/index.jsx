@@ -7,17 +7,20 @@ class HomeHeader extends React.Component {
     }
     render () {
         return (
-            <div className="clear-fix">
-                <div className="float-left">
-                    深圳
+            <div className="clear-fix header-wrapper">
+                <div className="float-left header-left">
+                    <span>{this.props.cityName}</span>
+                    &nbsp;
                     <i className="iconfont icon-down"></i>
                 </div>
-                <div className="float-right">
+                <div className="float-right header-right">
                     <i className="iconfont icon-user"></i>
                 </div>
-                <div>
-                    <i className="iconfont icon-search"></i>
-                    <input/>
+                <div className="header-middle">
+                    <div className="search-container">
+                        <i className="iconfont icon-search"></i>
+                        <input type="text"/>
+                    </div>
                 </div>
             </div>
         )

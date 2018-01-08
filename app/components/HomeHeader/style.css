@@ -1,0 +1,36 @@
+.header-wrapper {
+  background-color: #e9203d;
+  padding: 10px;
+}
+.header-wrapper * {
+  color: #fff;
+  font-size: 16px;
+  line-height: 1;
+}
+.header-wrapper .header-left {
+  width: 60px;
+  text-align: left;
+  margin: 5px 0;
+}
+.header-wrapper .header-right {
+  width: 30px;
+  text-align: right;
+  margin: 5px 0px;
+}
+.header-wrapper .header-middle {
+  width: auto;
+  margin: 0 30px 0 60px;
+}
+.header-wrapper .header-middle .search-container {
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  padding: 5px;
+}
+.header-wrapper .header-middle .search-container i {
+  color: #ccc !important;
+}
+.header-wrapper .header-middle .search-container input {
+  font-size: 14px !important;
+  font-weight: normal;
+}
