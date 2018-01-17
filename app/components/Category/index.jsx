@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import ReactSwipe from 'react-swipe'
-
+import './style.less'
 class Category extends React.Component {
     constructor(props, context) {
         super(props, context)
@@ -12,16 +12,17 @@ class Category extends React.Component {
         const opt = {
             auto: 10000,         //2秒滚动一次
             callback: (index) => {
-                this.setState({
-                    index: index
-                })
+                // this.setState({
+                //     index: index
+                // })
                 console.log(this.state.index)
             }
         }
         return (
             <div>
+                <img src="images/logo.png" alt=""/>
                 <ReactSwipe className="swipe-wrapper" swipeOptions={opt}>
-                    <div className="swipe-item">
+                    <div className="swipe-container">
                         <ul className="clear-fix">
                             <li className="float-left jingdian">景点</li>
                             <li className="float-left KTV">KTV</li>
@@ -35,8 +36,8 @@ class Category extends React.Component {
                             <li className="float-left jiuba">酒吧</li>
                         </ul>
                     </div>
-                    <div>PANE 2</div>
-                    <div>PANE 3</div>
+                    {/* <div>PANE 2</div>
+                    <div>PANE 3</div> */}
                 </ReactSwipe>
                 <div>{this.state.index}</div>
             </div>
